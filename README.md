@@ -1,5 +1,5 @@
 # Nasa
-App: https://codesandbox.io/s/nasa-api-challenge-5j9kl
+App: https://nasa-challenge.netlify.app/
 
 Created with CodeSandbox
 Simple React app using NASA API.
