@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "./Card";
-// import NasaPhotoBottomNav from "./NasaPhotoBottomNav";
 
 function NasaPhotoData() {
 	const [nasaPhoto, setNasaPhoto] = useState([]);
@@ -29,7 +28,6 @@ function NasaPhotoData() {
 				url={nasaPhoto.hdurl}
 				copyright={nasaPhoto.copyright}
 			/>
-			{/* <NasaPhotoBottomNav hdUrl={nasaPhoto.hdurl}/> */}
 		</div>
 	);
 }

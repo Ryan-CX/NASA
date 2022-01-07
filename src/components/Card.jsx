@@ -19,6 +19,8 @@ const Container = styled.div`
 
 const NasaPhotoCard = ({ url, title, copyright, desc, date }) => {
 	const [like, setLike] = useState(false);
+
+	// to control the like button on/off
 	const handleClick = () => {
 		if (like === false) {
 			setLike(true);
@@ -26,20 +28,23 @@ const NasaPhotoCard = ({ url, title, copyright, desc, date }) => {
 			setLike(false);
 		}
 	};
+
 	return (
 		<div className="photo-card">
+			{/* The main image */}
 			<div className="photo-of-the-day-div">
 				<img className="photo-of-the-day" src={url} alt="APOD" />
 			</div>
 
+			{/* Title and description */}
 			<div className="card-details">
 				<h2>{title} </h2>
 				<p className="copyright">
 					Image Credit and Copyright: {copyright}
 				</p>
-
 				<p className="card-content">{desc} </p>
 			</div>
+
 			<Container>
 				<Badge className="badge-date" color="dark">
 					Date: {date}{" "}
