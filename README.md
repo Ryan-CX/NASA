@@ -9,3 +9,4 @@ Header + Main Body + Footer
 API used: the Astronomy Photo of the Day;
 
 Added like button at the buttom.
+Loading screen shown.
