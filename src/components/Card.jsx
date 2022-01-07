@@ -41,27 +41,24 @@ const NasaPhotoCard = ({ url, title, copyright, desc, date }) => {
 				<h2>{title} </h2>
 				<p className="copyright">
 					Image Credit and Copyright: {copyright}
+					<button className="like" onClick={handleClick}>
+						{/* simply use a flag to control the like button status */}
+						{like === true ? (
+							<FontAwesomeIcon
+								icon={faHeartSolid}></FontAwesomeIcon>
+						) : (
+							<FontAwesomeIcon
+								icon={faHeartRegular}></FontAwesomeIcon>
+						)}
+					</button>
 				</p>
+
 				<p className="card-content">{desc} </p>
 			</div>
 
 			<Container>
-				<Badge className="badge-date" color="dark">
-					Date: {date}{" "}
-				</Badge>
-				<Badge className="badge-credit" color="dark">
-					Content and Image Credit: NASA
-				</Badge>
-
-				<button className="badge-credit" onClick={handleClick}>
-					{/* simply use a flag to control the like button status */}
-					{like === true ? (
-						<FontAwesomeIcon icon={faHeartSolid}></FontAwesomeIcon>
-					) : (
-						<FontAwesomeIcon
-							icon={faHeartRegular}></FontAwesomeIcon>
-					)}
-				</button>
+				<Badge className="badge">Date: {date} </Badge>
+				<Badge className="badge">Content and Image Credit: NASA</Badge>
 			</Container>
 		</div>
 	);

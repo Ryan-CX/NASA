@@ -56,10 +56,14 @@
 	padding-bottom: 10px;
 }
 
-.badge-credit {
+.badge {
 	margin-left: 30px;
 }
 
+.like {
+	margin-left: 20px;
+	background-color: #ffffff;
+}
 .button1-style {
 	margin-right: 30px;
 	margin-top: 20px;
